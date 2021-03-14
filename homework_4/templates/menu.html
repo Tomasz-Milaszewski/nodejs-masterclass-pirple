@@ -1,0 +1,47 @@
+<h1>Menu</h1>
+<h2>Have a look and make your choice</h2>
+<hr />
+
+<div class="formWrapper">
+    <form id="createCart" action="/api/cart" method="POST">
+        <div class="formError"></div>
+        <table id="menuTable">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Amount to cart</th>
+            </tr>
+            <tr>
+                {menuRowOne}
+                <th>
+                    <div class="inputWrapper">
+                        <div class="inputLabel">Qty</div>
+                        <input type="number" name="pizza1" min="0" placeholder="0" />
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                {menuRowTwo}
+                <th>
+                    <div class="inputWrapper">
+                        <div class="inputLabel">Qty</div>
+                        <input type="number" name="pizza2" min="0" placeholder="0" />
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                {menuRowThree}
+                <th>
+                    <div class="inputWrapper">
+                        <div class="inputLabel">Qty</div>
+                        <input type="number" name="pizza3" min="0" placeholder="0" />
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <div class="inputWrapper ctaWrapper">
+            <button type="submit" class="cta blue">Add & Go to cart</button>
+        </div>
+    </form>
+</div>

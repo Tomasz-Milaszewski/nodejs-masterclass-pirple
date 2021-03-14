@@ -1,0 +1,13 @@
+*/.logs
+*/.data
+
+*/tokens
+*/users
+*/https
+*/carts
+*/purchases
+
+*config.js
+
+.idea/
+.DS_Store
